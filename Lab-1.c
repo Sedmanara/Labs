@@ -6,15 +6,15 @@ int main()
     int b;
     int jet;
 
-    printf("Vvedi a: ");
-    scanf("%d", &a); // Сначала КЛАДЕМ число в коробку "а"
+    printf("Введи a: ");
+    scanf("%d", &a); 
 
-    printf("Vvedi b: ");
-    scanf("%d", &b); // Потом КЛАДЕМ число в коробку "b"
+    printf("Введи b: ");
+    scanf("%d", &b); 
 
     jet = a + b;
 
-    printf("Resultat jet: %d\n", jet); // И только теперь выводим сумму!
+    printf("Resultat jet: %d\n", jet);
 
     return 0;
 }

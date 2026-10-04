@@ -42,7 +42,7 @@ int main()
     int lines = 350;
 
     printf(" Завдання №2 \n");
-    printf("There were %o words and %d lines.\n", words, lines);
+    printf("There were %d words and %d lines.\n", words, lines);
 
     return 0;
 }

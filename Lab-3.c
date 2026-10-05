@@ -5,7 +5,7 @@
 int main()
 {
 double h, a, b, S, price, perc, disc, lastpr; // Я хочу більш точне значення
-int c
+int c, d;
 
 printf("Введи довжину першоі основи: ");
 scanf(" %lf", &a);
@@ -35,7 +35,10 @@ printf("Фінальна ціна: %.4lf", lastpr);
 printf("\nЗавдання №3 \n");
 
 printf("Введи трьохзначне число: ");
-scanf(" %d", c);
+scanf(" %d", &c);
+
+d = (c % 10) * 100 + (c / 100) * 10 + (c % 100 / 10);
+printf("Вийшло: %d", d);
 
 
     return 0;

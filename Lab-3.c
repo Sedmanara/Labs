@@ -5,7 +5,7 @@
 int main()
 {
 double h, a, b, S, price, perc, disc, lastpr; // Я хочу більш точне значення
-int c, d;
+int c, d, x, n, x1;
 
 printf("Введи довжину першоі основи: ");
 scanf(" %lf", &a);
@@ -40,6 +40,26 @@ scanf(" %d", &c);
 d = (c % 10) * 100 + (c / 100) * 10 + (c % 100 / 10);
 printf("Вийшло: %d", d);
 
+printf("\n Завдання №4 \n");
+printf("Введи число ");
+scanf(" %d", &x);
+
+printf("Введи номер біта ");
+scanf(" %d", &n);
+
+((x & (1 << n)) != 0) ? printf("Бiт 1\n") : printf("Біт 0\n");
+
+printf("\n Завдання №5 \n");
+printf("Введи число:");
+scanf(" %d", &x);
+
+printf("Введи номер біта: ");
+scanf(" %d", &n);
+
+x1 = x ^ ( 1 << n);
+
+printf("\nБіт який був %d", x);
+printf("\nБіт який став %d", x1);
 
     return 0;
 }

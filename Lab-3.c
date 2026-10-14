@@ -29,8 +29,8 @@ scanf(" %lf", &perc);
 
 disc = price * (perc/100);
 lastpr = price - disc;
-printf("Знижка: %.4lf \n", disc);
-printf("Фінальна ціна: %.4lf", lastpr);
+printf("Знижка: %.2lf \n", disc);
+printf("Фінальна ціна: %.2lf", lastpr);
 
 printf("\nЗавдання №3 \n");
 
@@ -50,7 +50,7 @@ scanf(" %d", &n);
 ((x & (1 << n)) != 0) ? printf("Бiт 1\n") : printf("Біт 0\n");
 
 printf("\n Завдання №5 \n");
-printf("Введи число:");
+printf("Введи число: ");
 scanf(" %d", &x);
 
 printf("Введи номер біта: ");

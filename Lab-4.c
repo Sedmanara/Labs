@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#define _CRT_SECURE_NO_WARNINGS 
+#define _CRT_SECURE_NO_WARNINGS
 int main()
 {
 
@@ -38,7 +38,7 @@ int main()
         case 24:  percent = 18.0; break;
         case 36:  percent = 24.0; break;
     
-    default: printf("Такого строку немає \n"); break;
+    default: { printf("Такого строку немає \n"); return 0; } 
     }
     profit = sum * (percent / 100.0) * (months / 12.0);
     printf("Прибуток за %d місяців: %.2f\n", months, profit);
@@ -46,4 +46,4 @@ int main()
 
 
 return 0;
-}
+} 

@@ -43,6 +43,27 @@ int main()
     profit = sum * (percent / 100.0) * (months / 12.0);
     printf("Прибуток за %d місяців: %.2f\n", months, profit);
 
+    printf("Завдання №3 \n");
+    double sm, inch, start, stop, step;
+    printf("Введи початкове число: \n");
+    scanf(" %lf", &start);
+
+    printf("Введи кінцеве число: \n");
+    scanf(" %lf", &stop);
+
+    printf("Введи крок: \n");
+    scanf(" %lf", &step);
+
+    inch = start;
+
+    while ( inch <= stop )
+    {
+        sm = inch * 2.54;
+
+        printf("Сантиметри: %.2lf \n", sm);
+
+        inch = inch + step;
+    }
 
 
 return 0;

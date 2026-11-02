@@ -65,6 +65,39 @@ int main()
         inch = inch + step;
     }
 
+    printf("Завдання №4 \n");
+    double min, current;
+    int N, A;
+    A = 0;
+
+    printf("Введи кількість чисел: \n");
+    scanf(" %d", &N);
+
+    while ( A < N )
+    {
+        printf("Введи число: \n");
+
+        scanf(" %lf", &current);
+
+        A++;
+
+        if ( A == 0)
+        {
+            min = current;
+        }
+        else if (min > current);
+        {
+            min = current;
+        }
+        
+            
+        
+        }
+        printf("Найменше число: %.4lf", min);
+
+
+
+
 
 return 0;
 } 

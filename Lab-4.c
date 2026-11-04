@@ -4,7 +4,7 @@
 int main()
 {
 
-    double x, y, a, b, r1, r2, Dist;
+   /* double x, y, a, b, r1, r2, Dist;
     float sum, profit, percent;
     int months;
     printf("Введи координати x та y: \n");
@@ -45,8 +45,12 @@ int main()
 
     printf("Завдання №3 \n");
     double sm, inch, start, stop, step;
-    printf("Введи початкове число: \n");
+    do
+    {
+      printf("Введи початкове число: \n");
     scanf(" %lf", &start);
+    } while ( start < 0);
+
 
     printf("Введи кінцеве число: \n");
     scanf(" %lf", &stop);
@@ -62,26 +66,26 @@ int main()
 
         printf("Сантиметри: %.2lf \n", sm);
 
-        inch = inch + step;
+        inch += step;
+
     }
 
     printf("Завдання №4 \n");
     double min, current;
-    int N, A;
-    A = 0;
+    int N, count_N;
+    count_N = 0;
 
     printf("Введи кількість чисел: \n");
     scanf(" %d", &N);
 
-    while ( A < N )
+    while ( count_N < N )
     {
         printf("Введи число: \n");
 
         scanf(" %lf", &current);
 
-        A++;
 
-        if ( A == 0)
+        if ( count_N == 0)
         {
             min = current;
         }
@@ -89,42 +93,37 @@ int main()
         {
             min = current;
         }
-        
-            
-        
-        }
-        printf("Найменше число: %.4lf", min);
+        count_N++;
+    }
+        printf("Найменше число: %.4lf", min);*/
 
      printf("Завдання №5 \n");
 
-     int h, v, m;
-     double num, n;
+     int count_num, iter=0, change_sigh = 0;
+     double num, temp;
      printf("Введи кількість чисел: \n");
-     scanf(" %d", &h);
-     v = 0;
-     m = 0;
-     n = 0; 
+     scanf(" %d", &count_num);
+     temp = 0; 
 
-     while ( v < h)
+     while ( iter < count_num)
      {
         printf("Введи число: \n");
-        scanf(" %lf", &num);
-        v++;
-        if ( num != 0 && n != 0)
+        scanf("%lf", &num);
+        //iter++;
+        if (num == 0)
         {
-            if (num * n < 0)
-            {
-                m++;
-            }
-            
+            continue; 
         }
-        if (num !=0)
+        if (temp != 0 && num * temp < 0)
         {
-            n = num;
+        change_sigh++;
         }
-     }
-     printf("Скільки разів було змінено знак: %d", m);
+    temp = num;
+    iter++;
+    }
+     
+     printf("Скільки разів було змінено знак: %d", change_sigh);
 
 
 return 0;
-} 
+}

@@ -95,8 +95,35 @@ int main()
         }
         printf("Найменше число: %.4lf", min);
 
+     printf("Завдання №5 \n");
 
+     int h, v, m;
+     double num, n;
+     printf("Введи кількість чисел: \n");
+     scanf(" %d", &h);
+     v = 0;
+     m = 0;
+     n = 0; 
 
+     while ( v < h)
+     {
+        printf("Введи число: \n");
+        scanf(" %lf", &num);
+        v++;
+        if ( num != 0 && n != 0)
+        {
+            if (num * n < 0)
+            {
+                m++;
+            }
+            
+        }
+        if (num !=0)
+        {
+            n = num;
+        }
+     }
+     printf("Скільки разів було змінено знак: %d", m);
 
 
 return 0;

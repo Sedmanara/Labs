@@ -32,7 +32,21 @@ int main()
         }
         i++;
      }
-     
+    printf("\n Завдання №2 \n");
+    char text[256];
+    printf("Введи символи \n");
+    scanf(" %255s", text);
+
+    do
+    {
+        if ( text[i] == '+' && text[i+1] >= '0' && text[i+1] <= '9')
+        {
+         
+        }
+        
+        i++;
+    } while ( text[i] != '\0');
+    
 
 
 
